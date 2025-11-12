@@ -1,0 +1,171 @@
+.horse-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  background: #1a1a1a;
+  border-radius: 3px;
+  border: 1px solid #333;
+  transition: background 0.2s;
+}
+
+.horse-item:hover {
+  background: #252525;
+}
+
+.result-item {
+  border-left: 2px solid #ffd700;
+}
+
+.horse-lane {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.horse-icon-wrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.horse-icon-small {
+  width: 22px;
+  height: 22px;
+}
+
+.horse-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.horse-name {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.horse-condition {
+  color: #888;
+  font-size: 10px;
+}
+
+.finish-time {
+  color: #4caf50;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: auto;
+  padding: 3px 6px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .horse-item {
+    gap: 10px;
+    padding: 7px;
+    border-radius: 3.5px;
+  }
+
+  .result-item {
+    border-left: 2.5px solid #ffd700;
+  }
+
+  .horse-lane {
+    width: 27px;
+    height: 27px;
+    font-size: 12.5px;
+  }
+
+  .horse-icon-wrapper {
+    width: 28px;
+    height: 28px;
+  }
+
+  .horse-icon-small {
+    width: 25px;
+    height: 25px;
+  }
+
+  .horse-details {
+    gap: 3px;
+  }
+
+  .horse-name {
+    font-size: 13px;
+  }
+
+  .horse-condition {
+    font-size: 11px;
+  }
+
+  .finish-time {
+    font-size: 12.5px;
+    padding: 3.5px 7px;
+    border-radius: 3.5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .horse-item {
+    gap: 12px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .result-item {
+    border-left: 3px solid #ffd700;
+  }
+
+  .horse-lane {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .horse-icon-wrapper {
+    width: 32px;
+    height: 32px;
+  }
+
+  .horse-icon-small {
+    width: 28px;
+    height: 28px;
+  }
+
+  .horse-details {
+    gap: 4px;
+  }
+
+  .horse-name {
+    font-size: 14px;
+  }
+
+  .horse-condition {
+    font-size: 12px;
+  }
+
+  .finish-time {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+}

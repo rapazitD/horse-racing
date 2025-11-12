@@ -1,0 +1,161 @@
+.race-track {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #c8c8c8;
+  border: 2px solid #333;
+  position: relative;
+  min-height: 300px;
+}
+
+.track-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  margin: 10px;
+  border-right: 3px solid #e20505;
+}
+
+.lane {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #666;
+  position: relative;
+  min-height: 25px;
+}
+
+.lane:first-child {
+  border-top: 1px dashed #666;
+}
+
+.lane-number {
+  width: 28px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #7a9b7a;
+  color: white;
+  padding: 4px 0;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.track-line {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.horse {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  transition: left 0.1s linear;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.horse-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.race-info {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 6px 12px;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+
+.round-info {
+  font-weight: bold;
+  color: #c00;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .race-track {
+    min-height: 400px;
+  }
+
+  .track-container {
+    padding: 12px 0;
+    margin: 15px;
+    border-right: 3px solid #e20505;
+  }
+
+  .lane {
+    min-height: 30px;
+    border-bottom: 1.5px dashed #666;
+  }
+
+  .lane:first-child {
+    border-top: 1.5px dashed #666;
+  }
+
+  .lane-number {
+    width: 35px;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+
+  .horse {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.3));
+  }
+
+  .race-info {
+    bottom: 15px;
+    padding: 7px 18px;
+  }
+
+  .round-info {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .track-container {
+    padding: 16px 0;
+    margin: 20px;
+    border-right: 4px solid #e20505;
+  }
+
+  .lane {
+    min-height: 35px;
+    border-bottom: 2px dashed #666;
+  }
+
+  .lane:first-child {
+    border-top: 2px dashed #666;
+  }
+
+  .lane-number {
+    width: 40px;
+    padding: 8px 0;
+    font-size: 14.4px;
+  }
+
+  .horse {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  }
+
+  .race-info {
+    bottom: 20px;
+    padding: 8px 24px;
+    border-radius: 5px;
+  }
+
+  .round-info {
+    font-size: 17.6px;
+  }
+}
