@@ -1,4 +1,10 @@
-# horse-racing-game
+# Horse Racing Game 🏇
+
+A Vue 3 horse racing simulation game with real-time race tracking and results.
+
+## Live Demo
+
+🔗 [Play the game](https://rapazitd.github.io/horse-racing/)
 
 This template should help get you started developing with Vue 3 in Vite.
 
